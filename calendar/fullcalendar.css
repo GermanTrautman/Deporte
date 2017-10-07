@@ -211,8 +211,8 @@ html .fc,
 
 
 .fc-state-default {
-	border-color: #ff3b30;
-	color: #ff3b30;	
+	border-color: #7c8561;
+	color: #7c8561;	
 }
 .fc-button-month.fc-state-default, .fc-button-agendaWeek.fc-state-default, .fc-button-agendaDay.fc-state-default{
     min-width: 67px;
@@ -225,11 +225,11 @@ html .fc,
 .fc-state-active,
 .fc-state-disabled {
 	color: #333333;
-	background-color: #FFE3E3;
+	background-color: #7c8561;
 	}
 
 .fc-state-hover {
-	color: #ff3b30;
+	color: white;
 	text-decoration: none;
 	background-position: 0 -15px;
 	-webkit-transition: background-position 0.1s linear;
@@ -240,7 +240,7 @@ html .fc,
 
 .fc-state-down,
 .fc-state-active {
-	background-color: #ff3b30;
+	background-color: #7c8561;
 	background-image: none;
 	outline: 0;
 	color: #FFFFFF;
@@ -249,11 +249,11 @@ html .fc,
 .fc-state-disabled {
 	cursor: default;
 	background-image: none;
-	background-color: #FFE3E3;
+	background-color: hsla(75, 16%, 45%, 0.3);
 	filter: alpha(opacity=65);
 	box-shadow: none;
 	border:1px solid #FFE3E3;
-	color: #ff3b30;
+	color: white;
 	}
 
 	

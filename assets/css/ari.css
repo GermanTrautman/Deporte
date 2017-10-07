@@ -28,3 +28,24 @@
 .subtitulo{
   font-size: 40px;
 }
+
+
+.menu-bis li{
+  float:left;
+  list-style-type: none;
+
+}
+
+
+.my-nav{
+  padding-right: 260px;
+}
+
+.menu-description{
+  padding-top: 80px;
+}
+
+.menu-description img{
+
+    filter: grayscale(70%);
+}

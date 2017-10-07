@@ -43,9 +43,17 @@
 
 .menu-description{
   padding-top: 80px;
+  padding-bottom: 0px !important;
 }
 
 .menu-description img{
 
     filter: grayscale(70%);
+}
+
+.header{
+  padding-top: 82px !important;
+}
+.header, .header nav{
+  background: white;
 }

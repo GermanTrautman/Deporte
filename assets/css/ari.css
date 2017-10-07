@@ -1,0 +1,28 @@
+.bla{
+      font-size: 75px;
+}
+
+.deportivarse-img{
+  position: absolute;
+opacity: 0.8;
+}
+
+.deportivarse-titulo{
+  position: relative;
+  color: white;
+  width: 50%;
+  padding-left: 32px;
+}
+
+.description{
+  padding-top: 225px;
+  font-size: 26px;
+}
+
+.inner header{
+  padding: 0px;
+}
+
+.subtitulo{
+  font-size: 40px;
+}

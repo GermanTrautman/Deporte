@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="Reserva/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Reserva/assets/css/material-bootstrap-wizard.css" rel="stylesheet" />
+
+    <link href='calendar/fullcalendar.css' rel='stylesheet' />
+    <link href='calendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+
+    <script src='calendar/jquery/jquery-1.10.2.js'></script>
+    <script src='calendar/jquery/jquery-ui.custom.min.js'></script>
+
+    <script src='calendar/fullcalendar.js'></script>
+    <script src='Reserva/assets/js/calendar.js'></script>
+    <link rel="stylesheet" href="Reserva/assets/css/calendar.css" />
+</head>
+
+<body>
+
+    <!--      Wizard container        -->
+    <div class="wizard-container" style="padding:10px; width:1200px; margin-left:60px;">
+        <div class="card wizard-card" data-color="red" id="wizard">
+            <form action="" method="">
+                <!--        You can switch " data-color="blue" "  with one of the next bright colors: "green", "orange", "red", "purple"             -->
+
+                <div class="wizard-header">
+                    <h3 class="wizard-title">
+                        Reservas
+                    </h3>
+                </div>
+                <div class="wizard-navigation">
+                    <ul>
+                        <li><a href="#details" data-toggle="tab">Informacion</a></li>
+                        <li><a href="#captain" data-toggle="tab">Disponibilidad</a></li>
+                        <li><a href="#description" data-toggle="tab">Comentario</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane" id="details">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h4 class="info-text"> Complete la informacion basica de la institucion.</h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                    <i class="material-icons">email</i>
+                                </span>
+                                    <div class="form-group label-floating">
+                                        <label class="control-label">Correo Electronico</label>
+                                        <input name="name" type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                    <i class="material-icons">home</i>
+                                </span>
+                                    <div class="form-group label-floating">
+                                        <label class="control-label">Nombre de la Institucion</label>
+                                        <input name="name2" type="password" class="form-control">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group label-floating">
+                                    <label class="control-label">Localidad</label>
+                                    <select class="form-control">
+                                    <option disabled="" selected=""></option>
+                                    <option value="Afghanistan"> Agronomia</option>
+                                    <option value="Albania"> Almagro </option>
+                                    <option value="Algeria"> Balvanera </option>
+                                    <option value="American Samoa"> Barracas </option>
+                                    <option value="Andorra"> Belgrano </option>
+                                    <option value="Angola"> Boedo </option>
+                                    <option value="...">...</option>
+                                </select>
+                                </div>
+                                <div class="form-group label-floating">
+                                    <label class="control-label">Cantidad de alumnos</label>
+                                    <select class="form-control">
+                                    <option disabled="" selected=""></option>
+                                    <option value="Afghanistan"> < 100 </option>
+                                    <option value="Albania"> 100 - 499 </option>
+                                    <option value="Algeria"> 499 - 999 </option>
+                                    <option value="American Samoa"> 999+ </option>
+                                </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="captain">
+                        <h4 class="info-text">Seleccione el dia </h4>
+                        <div class="row">
+                            <div id='wrap'>
+
+                                <div id='calendar'></div>
+
+                                <div style='clear:both'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="description">
+                        <div class="row">
+                            <h4 class="info-text"> Dejenos un comentario.</h4>
+                            <div class="col-sm-6 col-sm-offset-1">
+                                <div class="form-group">
+                                    <label>Comentario</label>
+                                    <textarea class="form-control" placeholder="" rows="6"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wizard-footer">
+                    <div class="pull-right">
+                        <input type='button' class='btn btn-next btn-fill btn-danger btn-wd' name='next' value='Next' />
+                        <input type='button' class='btn btn-finish btn-fill btn-danger btn-wd' name='finish' value='Finish' />
+                    </div>
+                    <div class="pull-left">
+                        <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- wizard container -->
+
+    <!-- Footer -->
+    <footer id="footers">
+
+    </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+
+    <script src="Reserva/assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="Reserva/assets/js/jquery.bootstrap.js" type="text/javascript"></script>
+
+    <!--  Plugin for the Wizard -->
+    <script src="Reserva/assets/js/material-bootstrap-wizard.js"></script>
+
+    <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+    <script src="Reserva/assets/js/jquery.validate.min.js"></script>
+
+</body>
+
+</html>

@@ -1,3 +1,6 @@
+i{
+  font-weight: bold;
+}
 .bla{
   font-size: 105px !important;
   padding-top: 72px;
@@ -42,7 +45,7 @@
 }
 
 .menu-description{
-  padding-top: 80px;
+  padding-top: 80px !important;
   padding-bottom: 0px !important;
 }
 

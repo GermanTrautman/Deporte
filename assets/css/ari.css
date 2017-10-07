@@ -1,10 +1,11 @@
 .bla{
-      font-size: 75px;
+  font-size: 105px !important;
+  padding-top: 72px;
 }
 
 .deportivarse-img{
   position: absolute;
-opacity: 0.8;
+  opacity: 0.8;
 }
 
 .deportivarse-titulo{
@@ -12,6 +13,7 @@ opacity: 0.8;
   color: white;
   width: 50%;
   padding-left: 32px;
+  padding-top: 70px;
 }
 
 .description{
@@ -25,4 +27,25 @@ opacity: 0.8;
 
 .subtitulo{
   font-size: 40px;
+}
+
+
+.menu-bis li{
+  float:left;
+  list-style-type: none;
+
+}
+
+
+.my-nav{
+  padding-right: 260px;
+}
+
+.menu-description{
+  padding-top: 80px;
+}
+
+.menu-description img{
+
+    filter: grayscale(70%);
 }
